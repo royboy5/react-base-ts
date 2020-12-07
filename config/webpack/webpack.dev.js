@@ -15,5 +15,6 @@ module.exports = merge(common, {
     stats: 'errors-only',
     open: true,
     compress: true,
+    hot: true,
   },
 });

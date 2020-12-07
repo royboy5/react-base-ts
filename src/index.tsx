@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import '@Styles/main.css';
+import './styles/main.css';
 import Home from './pages/Home';
 import Dashboard from './components/layouts/Dashboard';
 
-const App = () => (
+const App: FC = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/">

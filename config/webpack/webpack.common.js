@@ -9,14 +9,14 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, '..', '..', 'src/index'),
+    app: path.resolve(__dirname, '..', '..', 'src/index.tsx'),
   },
   output: {
     filename: './js/[name].bundle.js',
     path: path.resolve(__dirname, '..', '..', 'dist'),
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.css'],
   },
   module: {
     rules: [

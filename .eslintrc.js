@@ -42,11 +42,11 @@ module.exports = {
     },
     'import/resolver': {
       'babel-module': {
-        alias: {
-          '@Components': './src/components',
-          '@Pages': './src/pages',
-          '@Styles': './src/styles',
-        },
+        // alias: {
+        //   '@Components': './src/components',
+        //   '@Pages': './src/pages',
+        //   '@Styles': './src/styles',
+        // },
       },
     },
   },
