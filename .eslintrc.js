@@ -5,10 +5,9 @@ module.exports = {
     es2020: true,
   },
   extends: [
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -17,7 +16,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['@typescript-eslint', 'react'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': [
       'error',
@@ -27,14 +26,6 @@ module.exports = {
     ],
     '@typescript-eslint/indent': ['error', 2],
     'react/prop-types': 'off',
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-        optionalDependencies: false,
-        peerDependencies: false,
-      },
-    ],
   },
   settings: {
     react: {
