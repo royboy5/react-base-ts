@@ -6,9 +6,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'development',
   devtool: false,
-  plugins: [
-    new webpack.SourceMapDevToolPlugin({}),
-  ],
+  plugins: [new webpack.SourceMapDevToolPlugin({})],
   devServer: {
     contentBase: path.resolve(__dirname, '..', '..', 'dist'),
     port: 5000,
