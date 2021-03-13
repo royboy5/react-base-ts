@@ -4,15 +4,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './styles/main.css';
 import Home from './pages/Home';
-import Dashboard from './components/layouts/Dashboard';
 
 const App: FC = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/">
-        <Dashboard>
-          <Home />
-        </Dashboard>
+        <Home />
       </Route>
     </Switch>
   </BrowserRouter>
